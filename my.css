@@ -31,3 +31,36 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+/* Add a background color to progress bars */
+.progressBar{
+  background-color: #9E2B25;
+
+}
+
+/* Adds icon color */
+.icons {
+  color: #E9B872;
+} 
+/* Adds icon color */
+.colorMain {
+  color: #9E2B25;
+} 
+/* 
+.icons{
+  text-decoration: #151515;
+}
+
+.icons2{
+  text-decoration: #9E2B25;
+}
+.icons3{
+  text-decoration: #E9B872;
+}
+.icons4{
+  text-decoration: #BFD7EA;
+}
+
+.icons5{
+  text-decoration: #0D21A1;
+}  */
