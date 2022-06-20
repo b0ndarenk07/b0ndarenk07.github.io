@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+<h2>
+
+  THIS IS MY HEADING
+</h2>
+<h1>Types of Portfolios</h1>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!-- Chart -->
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+let GOOGLE_SHARES = 8;
+let GOOG_VALUE = 100;
+
+
+      
+let AAPL_SHARES = 10;
+let MSFT_SHARES = 5;
+let COIN_SHARES = 9;
+let ADBE_SHARES = 2;
+
+var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['GOOG', GOOGLE_SHARES],
+          ['AAPL', AAPL_SHARES],
+          ['MSFT', MSFT_SHARES],
+          ['COIN', COIN_SHARES],
+          ['ADBE', ADBE_SHARES]
+        ])
+
+;
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+    'title':'Technology ',
+   'width':550,
+    'height':400,
+    is3D: true};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+
+
+</body>
+</html>
