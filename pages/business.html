@@ -25,6 +25,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <div class="w3-row-padding">
 
   <head>
+
+
   <style>
   .accordion {
     background-color: #eee;
@@ -62,20 +64,100 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+  .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 40%;
+          border-radius: 5px;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        img {
+          border-radius: 5px 5px 0 0;
+        }
+        
+        .container {
+          padding: 2px 16px;
+        }
+
+
   </style>
   </head>
   <body>
-  <h2>Partners Links & Useful Resources</h2>
 
 
-  <div class="w3-black w3-center w3-padding-24">
-    <a href="https://twitter.com/steezygzeus"  class="fa fa-twitter w3-hover-opacity"> </a>
-    <a href="https://www.linkedin.com/in/bondarenkovlad/" class="fa fa-linkedin w3-hover-opacity"> </a>
-    <a href="https://www.instagram.com/bankrollerrec/" class="fa fa-instagram w3-hover-opacity"> </a>
-    <p>Vladislav Bondarenko</p>
+</div><div class="w3-container"> 
+
+    <h1> My projects</h1>
+
+    <div id="partnersDiv" class="w3-container w3-border-black w3-margin-top">    
+     
+
+
+      <div>
+
+      
+      </div>
+
+    <div class="card" >
+         <a href = "https://github.com/b0ndarenk07/bitcoin-price-tracker" target="_blank"> 
+        <img src="https://media4.giphy.com/media/ZZKxMEsaC2S4QTPfWt/giphy.gif" alt="Avatar" style="width:200px; height:400px;">
+      </a>
+    
+        <div class="container">
+          <h4><b>bitcoin price tracker</b></h4>
+          <p>
+            a standard Swift app for iOs implementing open source API's
+        </p>
+        </div>
+      </div>
+
+
+<div>
+
+</div>
+
+
+    </div>
+
+  <hr>
+    </div>
+
+
+    <!-- <div class="w3-container"> 
+      <div id="partnersDiv" class="w3-container w3-border-black w3-margin-top">    
+        <a href = "https://midas.investments?p=aff23398" target="_blank"> 
+          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/4505.png" style="width:64px; height:64px;" >
+          <div>
+            <h3> Midas.Investments</h3>
+          </div> 
+        </a>
+        <p> This website allows you to collect daily yield on your BTC, ETH, AVAX, & StableCoin Holdings. Quite possibly one of my favorite desktop defi applications.</p>
+      </div>
+      <hr>
+    -->
+ 
   </div>
+</div>
 
-</body>
+
+
+
+</div>
+<div>
+
+    <div class="w3-black w3-center w3-padding-24">
+        <a href="https://twitter.com/steezygzeus"  class="fa fa-twitter w3-hover-opacity"> </a>
+        <a href="https://www.linkedin.com/in/bondarenkovlad/" class="fa fa-linkedin w3-hover-opacity"> </a>
+        <a href="https://www.instagram.com/bankrollerrec/" class="fa fa-instagram w3-hover-opacity"> </a>
+        <p>Vladislav Bondarenko</p>
+      </div>>
+</div>
+
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
